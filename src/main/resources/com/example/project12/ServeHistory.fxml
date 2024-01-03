@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project12.ServeHistoryController">
+    <children>
+        <AnchorPane prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: #1A1A1A;">
+            <children>
+                <Text fx:id="header" fill="WHITE" layoutX="222.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHEFx" textAlignment="CENTER">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="44.0" />
+                    </font>
+                </Text>
+                <Button fx:id="backinServeHistory" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBackActionInServeHistory" style="-fx-background-color: #FFFFFF;" text="Back">
+                    <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="153.0" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: #B3B3B3;">
+            <children>
+                <TableView fx:id="tableView" layoutY="233.0" prefHeight="296.0" prefWidth="600.0" />
+                <AnchorPane fx:id="DetailsPane" prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: #1A1A1A;">
+                    <children>
+                        <Text fill="WHITE" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME:">
+                            <font>
+                                <Font name="Verdana Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="nameOfRestaurant" fill="WHITE" layoutX="102.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                            <font>
+                                <Font name="Verdana" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="249.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE:">
+                            <font>
+                                <Font name="Verdana Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="score" fill="WHITE" layoutX="318.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="score">
+                            <font>
+                                <Font name="Verdana" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="468.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE:">
+                            <font>
+                                <Font name="Verdana Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="price" fill="WHITE" layoutX="529.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price">
+                            <font>
+                                <Font name="Verdana" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="229.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZIPCODE:">
+                            <font>
+                                <Font name="Verdana Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="zipcode" fill="WHITE" layoutX="318.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="zipcode">
+                            <font>
+                                <Font name="Verdana" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="149.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORIES:">
+                            <font>
+                                <Font name="Verdana Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="categories" fill="WHITE" layoutX="257.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="categories" wrappingWidth="307.72802734375">
+                            <font>
+                                <Font name="Verdana" size="13.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="209.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serve History" textAlignment="CENTER">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+            <AnchorPane fx:id="servePlane" layoutX="-7.0" layoutY="162.0" prefHeight="72.0" prefWidth="607.0" style="-fx-background-color: #1A1A1A;">
+               <children>
+                  <Text fill="WHITE" layoutX="67.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers Served:">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="servedCustomerNo" fill="WHITE" layoutX="255.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="332.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Foods Served:">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="totalFoodsServed" fill="WHITE" layoutX="489.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="score" wrappingWidth="37.9208984375">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="399.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Sale:">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="totalSale" fill="WHITE" layoutX="489.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="62.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers To Be Served:">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tobeServed" fill="WHITE" layoutX="255.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fx:id="ifNoTable" fill="WHITE" layoutX="104.0" layoutY="356.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Nothing has been served yet" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+        <Text layoutX="175.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Details" textAlignment="CENTER">
+            <font>
+                <Font name="Verdana Bold Italic" size="24.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

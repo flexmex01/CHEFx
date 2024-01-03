@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project12.OrderHistoryController">
+    <children>
+        <AnchorPane prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: #02111b;">
+            <children>
+                <Text fill="LAVENDER" layoutX="222.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHEFx" textAlignment="CENTER">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="44.0" />
+                    </font>
+                </Text>
+                <Button fx:id="backinOrderedHistory" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBackActionInHistory" style="-fx-background-color: #e6e6fa;" text="Back">
+                    <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="151.0" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: #124559;">
+            <children>
+                <Text fill="WHITE" layoutX="164.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order History" textAlignment="CENTER" wrappingWidth="273.0">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+                <TableView fx:id="tableViewForName" layoutX="14.0" layoutY="68.0" prefHeight="341.0" prefWidth="572.0" />
+                <Button fx:id="ClearHistory" layoutX="244.0" layoutY="437.0" mnemonicParsing="false" onAction="#onClearHistoryAction" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="Clear History" />
+            <Text fx:id="ifNotTable" fill="WHITE" layoutX="94.0" layoutY="229.0" opacity="0.4" strokeType="OUTSIDE" strokeWidth="0.0" text="You have not ordered anything yet" textAlignment="CENTER" wrappingWidth="413.0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+        <Text fx:id="taunt" layoutX="14.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get yourself going with the better FOODPANDA," wrappingWidth="572.0">
+            <font>
+                <Font name="Verdana Bold Italic" size="14.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

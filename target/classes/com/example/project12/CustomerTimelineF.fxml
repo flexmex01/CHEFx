@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project12.CustomerTimelineControllerF">
+    <children>
+        <AnchorPane prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: #02111b;">
+            <children>
+                <Text fill="LAVENDER" layoutX="222.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHEFx" textAlignment="CENTER">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="44.0" />
+                    </font>
+                </Text>
+                <Button fx:id="backinCustomerTimelineF" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBackActionInCustomerTimelineF" style="-fx-background-color: #e6e6fa;" text="Back">
+                    <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="151.0" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: #124559;">
+            <children>
+                <Text fill="WHITE" layoutX="164.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Based Search Options" textAlignment="CENTER" wrappingWidth="273.0">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Button fx:id="searchFoodUsingName" layoutX="9.0" layoutY="7.0" mnemonicParsing="false" onAction="#onSearchFoodUsingNameAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Name" />
+                <Button fx:id="searchFoodUsingCategory" layoutX="9.0" layoutY="45.0" mnemonicParsing="false" onAction="#onSearchFoodUsingCategoryAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Category" />
+                <Button fx:id="searchFoodinRestUsingName" layoutX="156.0" layoutY="31.0" mnemonicParsing="false" onAction="#onSearchFoodUsingNameInRestAction" prefHeight="31.0" prefWidth="289.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Name In A Given Restaurant" />
+                <Button fx:id="SearchFoodUsingPrice" layoutX="465.0" layoutY="7.0" mnemonicParsing="false" onAction="#onSearchFoodUsingPriceRange" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Price Range" />
+                <TextField fx:id="searchBox" alignment="CENTER" layoutX="201.0" layoutY="222.0" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #e6e6fa;" />
+                <Button fx:id="searchSubmit" layoutX="400.0" layoutY="223.0" mnemonicParsing="false" onAction="#finalSearch" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="SEARCH" />
+                <TableView fx:id="tableViewForFood" layoutX="14.0" layoutY="261.0" prefHeight="259.0" prefWidth="572.0" />
+                <Button fx:id="searchFoodInRestUsingCategory" layoutX="157.0" layoutY="70.0" mnemonicParsing="false" onAction="#onSearchFoodUsingCategoryInRestAction" prefHeight="31.0" prefWidth="289.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Category In A Given Restaurant" />
+                <Button fx:id="defaultSearchButton" layoutX="465.0" layoutY="45.0" mnemonicParsing="false" onAction="#defaultSearchAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="View All" />
+                <TextField fx:id="searchBox3" alignment="CENTER" layoutX="202.0" layoutY="148.0" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #e6e6fa;" />
+            <Button fx:id="searchFoodInRestUsingPrice" layoutX="157.0" layoutY="109.0" mnemonicParsing="false" onAction="#onSearchFoodUsingPriceInRestAction" prefHeight="31.0" prefWidth="289.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="By Price Range In A Given Restaurant" />
+            <TextField fx:id="searchBox2" alignment="CENTER" layoutX="201.0" layoutY="185.0" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #e6e6fa;" />
+                <Button fx:id="viewCart" layoutX="23.0" layoutY="216.0" mnemonicParsing="false" onAction="#onViewCartAction" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="View Cart" />
+                <Button fx:id="showRestDetails" layoutX="444.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnRestDetailsAction" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #02111b; -fx-text-fill: #FFFFFF;" text="Restaurant Details">
+                    <font>
+                        <Font name="Verdana" size="13.0" />
+                    </font>
+                </Button>
+            <TableView fx:id="tableViewForRestName" layoutX="14.0" layoutY="261.0" onMouseMoved="#OrderRefresh" prefHeight="259.0" prefWidth="572.0" />
+            </children>
+        </AnchorPane>
+        <Text fx:id="taunt" layoutX="14.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get yourself going with the better FOODPANDA," wrappingWidth="572.0">
+            <font>
+                <Font name="Verdana Bold Italic" size="14.0" />
+            </font>
+        </Text>
+    </children>
+    <AnchorPane fx:id="DetailsPane" layoutY="-1.0" prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: #02111b;">
+        <children>
+            <Button fx:id="backinCustomerTimelineRestDetails" layoutX="16.0" layoutY="64.0" mnemonicParsing="false" onAction="#onBackActionInCustomerTimelineFRestDetails" style="-fx-background-color: #e6e6fa;" text="Back">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Button>
+            <Text fill="WHITE" layoutX="122.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME:">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id="nameOfRestaurant" fill="WHITE" layoutX="185.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                <font>
+                    <Font name="Verdana" size="13.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="116.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE:">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id="score" fill="WHITE" layoutX="186.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="score">
+                <font>
+                    <Font name="Verdana" size="13.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="420.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE:">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id="price" fill="WHITE" layoutX="480.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price">
+                <font>
+                    <Font name="Verdana" size="13.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="399.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZIPCODE:">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id="zipcode" fill="WHITE" layoutX="480.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="zipcode">
+                <font>
+                    <Font name="Verdana" size="13.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="266.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORIES:">
+                <font>
+                    <Font name="Verdana Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id="categories" fill="WHITE" layoutX="88.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="categories" wrappingWidth="454.72802734375">
+                <font>
+                    <Font name="Verdana" size="13.0" />
+                </font>
+            </Text>
+        </children>
+    </AnchorPane>
+</AnchorPane>

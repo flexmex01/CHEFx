@@ -1,0 +1,15 @@
+1,KFC,4.3,$$$,98531,Chicken,Fast Food,Family Meals
+2,IHOP,4.3,$$,77494,Breakfast and Brunch,Family Meals,Burgers
+3,Starbucks,4.9,$,99218,Coffee and Tea,Breakfast and Brunch,Bakery
+4,McDonalds,4.7,$,98346,Burgers,Fast Food,
+5,BFC,4.9,$,34242,Burgers,Chicken,Family Meals
+6,Jhol,4.5,$$,48723,Burgers,Family Meal,
+7,Pizza Hut,4.8,$$,64896,Cuisine,Pizza,Burgers
+8,Chillox,3.9,$,23555,Italian,Mexican,
+9,KFC Mirpur,4.6,$,394923,Family Meals,Burgers,Chicken
+10,TakeOut,4.3,$$,38134,Burgers,Pizza,Family Meals
+11,Kacchi Bhai,4.1,$,38284,Family Meals,Bengali Cuisine,Burgers
+12,Shumi's Hot Cake,4.4,$$,46823,Bakery,Sweets,
+13,Pabulum,4.0,$,2332,Burgers,Chicken,Pizza
+14,Madchef,4.0,$,2392,Breakfast,Burgers,
+15,Lavamba,4.0,$$,32424,Breakfast,Bakery,Cuisine
